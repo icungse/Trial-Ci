@@ -69,3 +69,4 @@ fastlane/test_output
 AppDelegate.xcodeproj/project.xcworkspace/xcshareddata
 AppDelegate.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 .DS_Store
+test_output
