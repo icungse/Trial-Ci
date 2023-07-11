@@ -6,7 +6,7 @@
     stages {
         stage('Bundle') {
             steps {
-                sh 'bundle install'
+                sh 'bundle update --bundler'
             }
         } 
         stage('RunTest') {
