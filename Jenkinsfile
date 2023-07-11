@@ -6,7 +6,7 @@
     stages {
         stage('Bundle') {
             steps {
-                sh 'bundle update --bundler'
+                sh 'gem install bundler:2.4.10 --user-install'
             }
         } 
         stage('RunTest') {
