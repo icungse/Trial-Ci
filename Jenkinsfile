@@ -4,7 +4,7 @@
         LC_ALL = 'en_US.UTF-8'
     }
     stages {
-        stage('Pull') {
+        stage('Config git') {
             steps {
                 git url: 'https://github.com/icungse/Trial-Ci.git', branch: 'main'
             }
