@@ -38,7 +38,7 @@ platform :ios do
       scheme: "Trial-CiTest",
       xccov_file_direct_path: xcresult_path,
       output_directory: "test_output/Trial-CiTest/coverage",
-      slack_url: "https://hooks.slack.com/services/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"
+      slack_url: "https://hooks.slack.com/services/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"
     )
   end
 
@@ -46,11 +46,11 @@ platform :ios do
   lane :start_slack do
     slack(
       message: "Start UnitTest :rocket:",
-      channel: "#jenkins-ios",
+      channel: "#automation",
       payload: {"🗓 Build Date" => Time.new.to_s},
       default_payloads: [:git_branch, :last_git_commit, :git_author, :last_git_commit_hash],
       icon_url: "https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/17080514251536298179-512.png",
-      slack_url: "https://hooks.slack.com/services/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"
+      slack_url: "https://hooks.slack.com/services/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"
     )
   end
 end
