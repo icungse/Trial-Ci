@@ -16,7 +16,7 @@
         }
         stage('Slather') {
             steps {
-                sh 'slather coverage -s --html --scheme Trial-Ci ./Trial-Ci.xcodeproj'
+                sh '$HOME/.rvm/gems/ruby-2.7.2/wrappers/slather coverage -s --html --scheme Trial-Ci ./Trial-Ci.xcodeproj'
             }
         }
     }
